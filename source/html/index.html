@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include("source/html/base/head.html")
+    <title>Work5</title>
+</head>
+
+<body>
+    <div style="display: none;">
+        @@include("build/img/stack/sprite_auto.svg")
+    </div>
+    <div class="site-wrapper">
+        @@include("source/html/base/header.html")
+        <main class="d-flex flex-column">
+            <div class="site-container d-flex flex-column flex-grow-1">
+                <div class="lc-layout js-lc-layout flex-grow-1">
+                    @@include("source/html/components/side-menu.html")
+                    <section class="content">
+                        <div class="content_header">
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="content_breadcrumbs">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Мои магазины</li>
+                                </ol>
+                            </nav>
+                            <div class="d-flex flex-wrap">
+                                <a href="#" class="info-block border rounded">
+                                    <div class="info-block_with-icon">
+                                        <img class="info-block_icon" src="img/svg/envelope.svg" alt="сообщение" width="23" height="18">
+                                    </div>
+                                </a>
+                                <a href="#" class="info-block bg-white shadow rounded">
+                                    <div class="info-block_avatar">
+                                        <img src="img/happy-man.png" alt="аватар" width="45" height="45">
+                                    </div>
+                                    <span class="info-block_name">Максим Добжанский</span>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="button mb-5 js-modal-button" data-modal="js-modal-1">
+                            <img class="button_icon" src="img/svg/plus.svg" width="16" height="16">
+                            Создать свой магазин
+                        </button>
+                        <h3 class="h3 mb-5">Управление магазинами</h3>
+                        @@include("source/html/components/table.html")
+                    </section>
+                </div>
+            </div>
+        </main>
+        @@include("source/html/base/footer.html")
+    </div>
+    @@include("source/html/components/modal.html")
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

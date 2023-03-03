@@ -1,0 +1,50 @@
+.burger {
+  position: relative;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: unset;
+  z-index: 10;
+}
+
+.burger_open,
+.burger_close {
+    position: absolute;
+    left: 0;
+}
+
+.burger_close:after {
+    opacity: 0;
+}
+
+.burger_open:after,
+.burger_close:after,
+.burger_close:before  {
+    content: "";
+    position: absolute;
+    background: var(--color-grey);
+    width: 2.2rem;
+    height: 0.2rem;
+    transition: var(--default-transition);
+}
+
+.burger_open:after {
+    box-shadow: 0 -0.7rem var(--color-grey), 0 0.7rem var(--color-grey);
+}
+
+.burger--active .burger_open:after {
+  opacity: 0;
+  transition: var(--default-transition);
+}
+
+.burger--active .burger_close:after {
+  opacity: 1;
+  transition: var(--default-transition);
+}
+
+.burger--active .burger_close:after {
+  transform: rotate(-45deg);
+}
+
+.burger--active .burger_close:before {
+  transform: rotate(45deg);
+}

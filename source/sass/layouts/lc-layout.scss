@@ -1,0 +1,8 @@
+.lc-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include vp-1200 {
+        grid-template-columns: 25.6rem 1fr;
+    }
+}

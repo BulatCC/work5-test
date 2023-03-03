@@ -1,0 +1,56 @@
+.nav-menu {
+    margin-left: -1rem;
+}
+
+.nav-menu_item {
+    display: flex;
+    position: relative;
+    padding: 1rem 0 1rem 1rem;
+
+    @include vp-1200 {
+        padding: 1rem;
+    }
+
+    + .nav-menu_item {
+        margin-top: 1rem;
+    }
+
+    + .active {
+        color: var(--color-default-black);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0.4rem;
+            height: 100%;
+            top: 0;
+            left: -0.5rem;
+            background-color: var(--color-violet);
+            box-shadow: 0px 2px 10px var(--color-violet);
+            pointer-events: none;
+
+            @include vp-1200 {
+                left: -1.5rem;
+            }
+        }
+
+        .nav-menu_icon {
+            filter: invert(46%) sepia(41%) saturate(884%) hue-rotate(202deg) brightness(85%) contrast(87%);
+        }
+    }
+}
+
+.nav-menu_icon {
+    margin-right: 2rem;
+    min-width: 2.1rem;
+    min-height: 2.1rem;
+}
+
+.nav-menu_text {
+    min-width: 25rem;
+    transition: var(--default-transition);
+
+    @include vp-1200 {
+        min-width: auto;
+    }
+}

@@ -1,0 +1,31 @@
+.content {
+    padding: 2.2rem 1.6rem 2.2rem 7rem;
+    background-color: var(--color-light-blue);
+
+    @include vp-1200 {
+        padding: 2.2rem 1.6rem 2.2rem 6rem;
+    }
+}
+
+.content_header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+
+    @include vp-1024 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.content_breadcrumbs {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+
+    @include vp-1024 {
+        margin-bottom: 0;
+    }
+}
+

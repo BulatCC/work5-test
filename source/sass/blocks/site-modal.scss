@@ -1,0 +1,65 @@
+.site-modal {
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: var(--color-overlay);
+    transition: var(--default-transition);
+    opacity: 0;
+
+    &--active {
+        visibility: visible;
+        opacity: 1;
+        transition: var(--default-transition);
+    }
+}
+
+.site-modal_wrapper {
+    position: relative;
+    margin: auto;
+    z-index: 20;
+    padding: 2rem;
+    width: 61.7rem;
+    background-color: var(--color-default-white);
+
+    @include vp-768 {
+        padding: 3rem 3rem 3.5rem 3rem;
+    }
+
+    .close-button {
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+        padding: 0;
+        width: 1.7rem;
+        height: 1.7rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.site-modal_title {
+    margin-bottom: 4.75rem;
+}
+
+.site-modal_container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    gap: 3rem;
+
+    @include vp-768 {
+        gap: 8.7rem;
+    }
+}
+
+.site-modal_button {
+    min-width: 15rem;
+    font-size: 1.4rem;
+}

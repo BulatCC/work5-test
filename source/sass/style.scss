@@ -1,0 +1,30 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Global
+// ---------------------------------
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+
+// Blocks
+// ---------------------------------
+@import "blocks/side-menu";
+@import "blocks/nav-menu";
+@import "blocks/content";
+@import "blocks/burger";
+@import "blocks/info-block";
+@import "blocks/button";
+@import "blocks/table-custom";
+@import "blocks/site-modal";
+@import "blocks/domen-input";
+
+// Layouts
+// ---------------------------------
+@import "layouts/lc-layout";
+

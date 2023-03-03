@@ -1,0 +1,58 @@
+.side-menu {
+    position: absolute;
+    height: 100%;
+    transition: var(--default-transition);
+
+    &.active {
+        width: 100%;
+        background-color: var(--color-overlay);
+        z-index: 1;
+
+        .side-menu_wrapper {
+            width: 25rem;
+        }
+    }
+
+    @include vp-1200 {
+        position: static;
+    }
+}
+
+.side-menu_wrapper {
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    overflow: hidden;
+    background-color: var(--color-default-white);
+    height: 100%;
+    width: 5.5rem;
+    transition: var(--default-transition);
+
+    @include vp-1200 {
+        position: relative;
+        padding: 2.5rem;
+        width: auto;
+    }
+}
+
+.side-menu_overlay {
+    @include vp-1200 {
+        display: none;
+    }
+}
+
+.side-menu_burger {
+    margin-bottom: 1rem;
+}
+
+.side-menu_logo-link {
+    display: block;
+    position: absolute;
+    margin-bottom: 4.3rem;
+    width: 5rem;
+    top: 1.5rem;
+    left: 0.4rem;
+
+    @include vp-1200 {
+        position: static;
+        width: 8.2rem;
+    }
+}

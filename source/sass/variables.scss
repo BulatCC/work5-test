@@ -1,0 +1,32 @@
+:root {
+    --default-transition: 0.3s ease;
+
+    // Colors
+    // ---------------------------------
+    --color-default-black: #343434;
+    --color-default-white: #ffffff;
+    --color-dark-grey: #6E6E6E;
+    --color-input-bg: #E6E6E9;
+    --color-grey: #7D7D7D;
+    --color-light-grey: #B1B1B1;
+    --color-pale-grey: #D9D9D9;
+    --color-very-pale-grey: #7C7C7C;
+    --color-super-pale-grey: #e4e4e4;
+    --color-violet: #6666CC;
+    --color-light-blue: #F8FAFF;
+    --color-light-red: #E42626;
+    --color-green: #55C97B;
+    --color-overlay: rgba(0, 0, 0, 0.5);
+}
+
+// Viewports
+// ---------------------------------
+
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1200: 1200px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
+

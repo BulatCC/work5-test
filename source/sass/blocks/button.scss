@@ -1,0 +1,27 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    min-height: 3.6rem;
+    font-weight: 400;
+    background-color: var(--color-green);
+    border-radius: 0.4rem;
+    color: var(--color-default-white);
+    font-size: 1.2rem;
+    transition: var(--default-transition);
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &--grey {
+        background-color: var(--color-light-grey);
+    }
+}
+
+.button_icon {
+    margin-right: 1.2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+}
