@@ -24,6 +24,7 @@
     th {
         padding-bottom: 1rem;
         color: var(--color-default-black);
+        font-weight: 500;
 
         @include vp-768 {
             padding-bottom: 1.5rem;
