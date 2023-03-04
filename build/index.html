@@ -105,19 +105,23 @@
                                     <li class="breadcrumb-item active" aria-current="page">Мои магазины</li>
                                 </ol>
                             </nav>
-                            <div class="d-flex flex-wrap">
-                                <a href="#" class="info-block border rounded">
-                                    <div class="info-block_with-icon">
-                                        <img class="info-block_icon" src="img/svg/envelope.svg" alt="сообщение" width="23" height="18">
-                                    </div>
-                                </a>
-                                <a href="#" class="info-block bg-white shadow rounded">
-                                    <div class="info-block_avatar">
-                                        <img src="img/happy-man.png" alt="аватар" width="45" height="45">
-                                    </div>
-                                    <span class="info-block_name">Максим Добжанский</span>
-                                </a>
-                            </div>
+                            <ul class="content_info-list">
+                                <li class="content_info-list-item">
+                                    <a href="#" class="info-block border rounded">
+                                        <div class="info-block_with-icon">
+                                            <img class="info-block_icon" src="img/svg/envelope.svg" alt="сообщение" width="23" height="18">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="content_info-list-item">
+                                    <a href="#" class="info-block bg-white shadow rounded">
+                                        <div class="info-block_avatar">
+                                            <img src="img/happy-man.png" alt="аватар" width="45" height="45">
+                                        </div>
+                                        <span class="info-block_name">Максим Добжанский</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                         <button class="button mb-5 js-modal-button" data-modal="js-modal-1">
                             <img class="button_icon" src="img/svg/plus.svg" width="16" height="16">
@@ -217,8 +221,8 @@
                 создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="#"
                     class="color-violet">ссылке</a></p>
         </div>
-        <button class="button site-modal_button d-inline-flex js-modal-close width-100-mob mb-4 mb-md-0 me-md-3" type="button">Отмена</button>
-        <button class="button site-modal_button button--grey d-inline-flex width-100-mob" type="button">Создать</button>
+        <button class="button site-modal_button d-inline-flex width-100-mob mb-4 mb-md-0 me-md-3" type="button">Создать</button>
+        <button class="button site-modal_button button--grey d-inline-flex width-100-mob js-modal-close" type="button">Отмена</button>
         </button>
     </form>
 </div>

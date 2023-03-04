@@ -7242,6 +7242,18 @@ p {
   margin-bottom: 1rem;
 }
 
+.content_info-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.6rem;
+  margin-top: -1.6rem;
+}
+
+.content_info-list-item {
+  margin-left: 1.6rem;
+  margin-top: 1.6rem;
+}
+
 .burger {
   position: relative;
   width: 2.4rem;
@@ -7305,10 +7317,6 @@ p {
 
 .info-block:hover {
   opacity: 0.8;
-}
-
-.info-block + .info-block {
-  margin-left: 1.6rem;
 }
 
 .info-block_with-icon {

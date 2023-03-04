@@ -29,3 +29,14 @@
     }
 }
 
+.content_info-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1.6rem;
+    margin-top: -1.6rem;
+}
+
+.content_info-list-item {
+    margin-left: 1.6rem;
+    margin-top: 1.6rem;
+}
